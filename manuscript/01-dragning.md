@@ -9,7 +9,7 @@ Dragning inträffar när en yttre kraft appliceras på ett material på ett såd
 Formeln för spänning (σ) är:
 
 ```latexmath
-σ = \frac{F}{A}
+\sigma= \frac{F}{A}
 ```
 
 där:
@@ -22,7 +22,7 @@ där:
 Spänningslagen om dragning beskriver förhållandet mellan dragkraften och den resulterande spänningen i ett material. Enligt Hookes lag, inom elastiska gränser, är spänningen proportionell mot den resulterande töjningen:
 
 ```latexmath
-\sigma = E \cdot ε
+\sigma = E \cdot \epsilon
 ```
 
 där:
@@ -40,8 +40,8 @@ Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft p�
 ```
 
 där:
-- `\(F = 1000 \, \text{N}\)`
-- `(A = 10 \, \text{mm}^2)`
+- `\(F = 1000 \, \text{N}\)`$
+- `(A = 10 \, \text{mm}^2)`$
 
 Således:
 
