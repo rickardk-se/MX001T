@@ -22,7 +22,7 @@ där:
 Spänningslagen om dragning beskriver förhållandet mellan dragkraften och den resulterande spänningen i ett material. Enligt Hookes lag, inom elastiska gränser, är spänningen proportionell mot den resulterande töjningen:
 
 ```latexmath
-σ = E \cdot ε
+\sigma = E \cdot ε
 ```
 
 där:
@@ -36,7 +36,7 @@ där:
 Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft på 1000 N appliceras längs med stångens längdaxel. Vi kan beräkna dragspänningen enligt följande:
 
 ```latexmath
-σ = \frac{F}{A}
+\sigma = \frac{F}{A}
 ```
 
 där:
@@ -46,7 +46,7 @@ där:
 Således:
 
 ```latexmath
-σ = \frac{1000 \, \text{N}}{10 \, \text{mm}^2} = 100 \, \text{N/mm}^2
+\sigma = \frac{1000 \, \text{N}}{10 \, \text{mm}^2} = 100 \, \text{N/mm}^2
 ```
 
 Detta innebär att dragspänningen i stången är 100 N/mm².
@@ -58,13 +58,13 @@ Enligt Hookes lag är töjningen (ε) proportionell mot den applicerade spännin
 För stål är elasticitetsmodulen typiskt omkring 210,000 N/mm². Om vi använder denna värde, kan vi beräkna töjningen (ε) som orsakas av den tidigare beräknade dragspänningen.
 
 ```latexmath
-ε = \frac{σ}{E}
+\epsilon = \frac{\sigma}{E}
 ```
 
-Med \(σ = 100 \, \text{N/mm}^2\) och \(E = 210,000 \, \text{N/mm}^2\):
+Med \(\sigma = 100 \, \text{N/mm}^2\) och \(E = 210,000 \, \text{N/mm}^2\):
 
 ```latexmath
-ε = \frac{100 \, \text{N/mm}^2}{210,000 \, \text{N/mm}^2} ≈ 0.000476
+\epsilon = \frac{100 \, \text{N/mm}^2}{210,000 \, \text{N/mm}^2} ≈ 0.000476
 ```
 
 Detta betyder att för varje enhet längd av stången, sker en förlängning på cirka 0.000476 enheter längd.
