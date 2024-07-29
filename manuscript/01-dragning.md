@@ -9,7 +9,7 @@ Dragning inträffar när en yttre kraft appliceras på ett material på ett såd
 Formeln för spänning (σ) är:
 
 ```latexmath
-\sigma= \frac{F}{A}
+\sigma = \frac{F}{A}
 ```
 
 där:
@@ -40,8 +40,8 @@ Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft p�
 ```
 
 där:
-- `\(F = 1000 \, \text{N}\)`$
-- `(A = 10 \, \text{mm}^2)`$
+- `F = 1000 \text{N}`$
+- `A = 10 \, \text{mm}^2`$
 
 Således:
 
@@ -61,7 +61,7 @@ För stål är elasticitetsmodulen typiskt omkring 210,000 N/mm². Om vi använd
 \epsilon = \frac{\sigma}{E}
 ```
 
-Med \(\sigma = 100 \, \text{N/mm}^2\) och \(E = 210,000 \, \text{N/mm}^2\):
+Med \(`\sigma = 100 \, \text{N/mm}^2`$\) och \(`E = 210,000 \, \text{N/mm}^2`$\):
 
 ```latexmath
 \epsilon = \frac{100 \, \text{N/mm}^2}{210,000 \, \text{N/mm}^2} ≈ 0.000476
