@@ -72,3 +72,28 @@ Detta betyder att för varje enhet längd av stången, sker en förlängning på
 ## Sammanfattning
 
 Dragning är en kritisk typ av belastning som är avgörande att förstå för att designa säkra och effektiva strukturer. Genom att använda grundläggande principer som spänningsformeln och Hookes lag, kan ingenjörer beräkna hur material beter sig under dragkrafter och säkerställa att de inte överskrider sina elastiska gränser.
+
+## Övningsuppgifter
+
+För att säkerställa att du förstår koncepten som presenterats i detta kapitel, vänligen arbeta igenom följande övningsuppgifter. Lösningarna bör inkludera alla steg och formler som används.
+
+### Övning 1: Beräkning av Dragspänning
+
+En aluminiumstång med en tvärsnittsarea på 20 mm² utsätts för en dragkraft på 500 N. Beräkna dragspänningen i stången.
+
+### Övning 2: Töjning och Förlängning
+
+En koppartråd med en ursprunglig längd på 2 meter och en tvärsnittsarea på 1 mm² utsätts för en dragkraft på 200 N. Elasticitetsmodulen för koppar är 110,000 N/mm². Beräkna töjningen och den totala förlängningen av tråden.
+
+### Övning 3: Materialval
+
+Två material, stål och aluminium, används för att tillverka stänger med samma dimensioner (tvärsnittsarea och längd). Elasticitetsmodulen för stål är 210,000 N/mm² och för aluminium är den 70,000 N/mm². Om båda stängerna utsätts för samma dragkraft, vilken stång kommer att ha den största töjningen? Beräkna töjningen för båda materialen.
+
+### Övning 4: Säkerhetsfaktor
+
+En plaststång med en tvärsnittsarea på 5 mm² och en längd på 1 meter utsätts för en dragkraft på 50 N. Plasticitetens elasticitetsmodul är 3,000 N/mm². Om det maximalt tillåtna töjningsvärdet för plasten är 0.01, beräkna säkerhetsfaktorn för denna belastning.
+
+### Övning 5: Spänning i en Kompositstång
+
+En kompositstång består av två olika material: material A med en tvärsnittsarea på 8 mm² och material B med en tvärsnittsarea på 12 mm². En total dragkraft på 1000 N appliceras på kompositstången. Elasticitetsmodulen för material A är 150,000 N/mm² och för material B är 100,000 N/mm². Beräkna den totala dragspänningen i kompositstången och fördelningen av spänningen mellan de två materialen.
+
