@@ -1,47 +1,48 @@
 # Dragning
 
-Dragning är en av de mest grundläggande typerna av mekaniska belastningar och uppstår när en kraft verkar längs med en kropps längdaxel och drar den isär. Denna typ av belastning är vanlig i många strukturella applikationer, såsom i kablar, stänger och andra komponenter som måste motstå dragkrafter.
+Dragning är en grundläggande mekanisk belastning som uppstår när en kraft verkar längs en kropps längdaxel och drar den isär. Denna typ av belastning är vanlig i många strukturella applikationer, såsom kablar, stänger och andra komponenter som måste motstå dragkrafter.
 
 ## Definition av Dragning
 
-Dragning inträffar när en yttre kraft appliceras på ett material på ett sådant sätt att materialet sträcks ut. Denna kraft kallas dragkraft och resulterar i en spänning inom materialet. Spänning är en mätning av den inre kraften per ytenhet som uppstår som en följd av den applicerade belastningen.
+Dragning inträffar när en yttre kraft appliceras på ett material så att materialet sträcks ut. Denna kraft kallas dragkraft och resulterar i en spänning inom materialet. Spänning mäter den inre kraften per ytenhet som uppstår på grund av den applicerade belastningen.
 
-Formeln för spänning (σ) är:
+Enheten för kraft är Newton (N). En Newton definieras som den kraft som krävs för att accelerera ett föremål med en massa på ett kilogram med en hastighet av en meter per sekundkvadrat.
+
+Formeln för spänning (`σ`) är:
 
 ```latexmath
 \sigma = \frac{F}{A}
 ```
 
 där:
-- \(σ\) är spänningen i N/mm² (Newton per kvadratmillimeter).
-- \(F\) är den applicerade kraften i Newton (N).
-- \(A\) är tvärsnittsarean av materialet i kvadratmillimeter (mm²).
+- `\(σ\)`$ är spänningen i N/mm² (Newton per kvadratmillimeter).
+- `\(F\)`$ är den applicerade kraften i Newton (N).
+- `\(A\)`$ är tvärsnittsarean av materialet i kvadratmillimeter (mm²).
 
 ## Spänningslagen om Dragning
 
-Spänningslagen om dragning beskriver förhållandet mellan dragkraften och den resulterande spänningen i ett material. Enligt Hookes lag, inom elastiska gränser, är spänningen proportionell mot den resulterande töjningen:
+Spänningslagen om dragning beskriver förhållandet mellan dragkraften och den resulterande spänningen i ett material. Enligt Hookes lag är spänningen proportionell mot den resulterande töjningen inom materialets elastiska gränser:
 
 ```latexmath
 \sigma = E \cdot \epsilon
 ```
 
 där:
-- \(σ\) är spänningen i N/mm².
-- \(E\) är elasticitetsmodulen eller Youngs modulus i N/mm².
-- \(ε\) är töjningen, enhetslös (förändringen i längd delat med ursprungslängden).
-
+- `\(σ\)`$ är spänningen i N/mm².
+- `\(E\)`$ är elasticitetsmodulen eller Youngs modulus i N/mm².
+- `\(ε\)`$ är töjningen, enhetslös (förändringen i längd delat med ursprungslängden).
 
 ## Exempel på Beräkning av Dragspänning
 
-Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft på 1000 N appliceras längs med stångens längdaxel. Vi kan beräkna dragspänningen enligt följande:
+Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft på 1000 N applicerad längs stångens längdaxel. Vi kan beräkna dragspänningen enligt följande:
 
 ```latexmath
 \sigma = \frac{F}{A}
 ```
 
 där:
-- `F = 1000 \text{N}`$
-- `A = 10 \, \text{mm}^2`$
+- `\( F = 1000 \text{ N} \)`$
+- `\( A = 10 \, \text{ mm}^2 \)`$
 
 Således:
 
@@ -53,21 +54,21 @@ Detta innebär att dragspänningen i stången är 100 N/mm².
 
 ## Hookes Lag och Elastiska Gränser
 
-Enligt Hookes lag är töjningen (ε) proportionell mot den applicerade spänningen (σ) så länge materialet inte överskrider sin elastiska gräns. Elasticitetsmodulen (E) för materialet är en konstant som beskriver materialets styvhet.
+Enligt Hookes lag är töjningen (`ε`) proportionell mot den applicerade spänningen (`σ`) så länge materialet inte överskrider sin elastiska gräns. Elasticitetsmodulen (`E`) för materialet beskriver materialets styvhet.
 
-För stål är elasticitetsmodulen typiskt omkring 210,000 N/mm². Om vi använder denna värde, kan vi beräkna töjningen (ε) som orsakas av den tidigare beräknade dragspänningen.
+För stål är elasticitetsmodulen typiskt omkring 210 000 N/mm². Om vi använder detta värde, kan vi beräkna töjningen (`ε`) som orsakas av den tidigare beräknade dragspänningen.
 
 ```latexmath
 \epsilon = \frac{\sigma}{E}
 ```
 
-Med \(`\sigma = 100 \, \text{N/mm}^2`$\) och \(`E = 210,000 \, \text{N/mm}^2`$\):
+Med `\( \sigma = 100 \, \text{N/mm}^2 \)`$ och `\( E = 210 000 \, \text{N/mm}^2 \)`$:
 
 ```latexmath
-\epsilon = \frac{100 \, \text{N/mm}^2}{210,000 \, \text{N/mm}^2} ≈ 0.000476
+\epsilon = \frac{100 \, \text{N/mm}^2}{210 000 \, \text{N/mm}^2} \approx 0.000476
 ```
 
-Detta betyder att för varje enhet längd av stången, sker en förlängning på cirka 0.000476 enheter längd.
+Detta betyder att för varje meter av stången, sker en förlängning på cirka 0.000476 meter (eller 0.476 millimeter).
 
 ## Sammanfattning
 
@@ -83,17 +84,16 @@ En aluminiumstång med en tvärsnittsarea på 20 mm² utsätts för en dragkraft
 
 ### Övning 2: Töjning och Förlängning
 
-En koppartråd med en ursprunglig längd på 2 meter och en tvärsnittsarea på 1 mm² utsätts för en dragkraft på 200 N. Elasticitetsmodulen för koppar är 110,000 N/mm². Beräkna töjningen och den totala förlängningen av tråden.
+En koppartråd med en ursprunglig längd på 2 meter och en tvärsnittsarea på 1 mm² utsätts för en dragkraft på 200 N. Elasticitetsmodulen för koppar är 110 000 N/mm². Beräkna töjningen och den totala förlängningen av tråden.
 
 ### Övning 3: Materialval
 
-Två material, stål och aluminium, används för att tillverka stänger med samma dimensioner (tvärsnittsarea och längd). Elasticitetsmodulen för stål är 210,000 N/mm² och för aluminium är den 70,000 N/mm². Om båda stängerna utsätts för samma dragkraft, vilken stång kommer att ha den största töjningen? Beräkna töjningen för båda materialen.
+Två material, stål och aluminium, används för att tillverka stänger med samma dimensioner (tvärsnittsarea och längd). Elasticitetsmodulen för stål är 210 000 N/mm² och för aluminium är den 70 000 N/mm². Om båda stängerna utsätts för samma dragkraft, vilken stång kommer att ha den största töjningen? Beräkna töjningen för båda materialen.
 
 ### Övning 4: Säkerhetsfaktor
 
-En plaststång med en tvärsnittsarea på 5 mm² och en längd på 1 meter utsätts för en dragkraft på 50 N. Plasticitetens elasticitetsmodul är 3,000 N/mm². Om det maximalt tillåtna töjningsvärdet för plasten är 0.01, beräkna säkerhetsfaktorn för denna belastning.
+En plaststång med en tvärsnittsarea på 5 mm² och en längd på 1 meter utsätts för en dragkraft på 50 N. Plastens elasticitetsmodul är 3 000 N/mm². Om det maximalt tillåtna töjningsvärdet för plasten är 0.01, beräkna säkerhetsfaktorn för denna belastning.
 
 ### Övning 5: Spänning i en Kompositstång
 
-En kompositstång består av två olika material: material A med en tvärsnittsarea på 8 mm² och material B med en tvärsnittsarea på 12 mm². En total dragkraft på 1000 N appliceras på kompositstången. Elasticitetsmodulen för material A är 150,000 N/mm² och för material B är 100,000 N/mm². Beräkna den totala dragspänningen i kompositstången och fördelningen av spänningen mellan de två materialen.
-
+En kompositstång består av två olika material: material A med en tvärsnittsarea på 8 mm² och material B med en tvärsnittsarea på 12 mm². En total dragkraft på 1 000 N appliceras på kompositstången. Elasticitetsmodulen för material A är 150 000 N/mm² och för material B är 100 000 N/mm². Beräkna den totala dragspänningen i kompositstången och fördelningen av spänningen mellan de två materialen.
