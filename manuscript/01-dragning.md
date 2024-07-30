@@ -20,20 +20,6 @@ där:
 - \(`F`\) är den applicerade kraften i Newton (N)
 - \(`A`\) är tvärsnittsarean av materialet i kvadratmillimeter (mm²)
 
-## Spänningslagen om Dragning
-
-Spänningslagen om dragning beskriver förhållandet mellan dragkraften och den resulterande spänningen i ett material. Enligt **Hookes lag** är spänningen proportionell mot den resulterande **töjningen** inom materialets elastiska gränser:
-
-{title: "Hookes lag"}
-```latexmath
-\sigma = E \cdot \epsilon
-```
-
-där:
-- \(`σ`\) är spänningen i N/mm²
-- \(`E`\) är elasticitetsmodulen eller Youngs modulus i N/mm²
-- \(`ε`\) är töjningen, enhetslös
-
 ## Exempel på Beräkning av Dragspänning
 
 Anta att vi har en stång med en tvärsnittsarea på 10 mm² och en dragkraft på 1000 N applicerad längs stångens längdaxel. Vi kan beräkna dragspänningen enligt följande med Hookes lag:
@@ -86,7 +72,17 @@ Dragspänningen är 100.0 N/mm²
 
 ## Hookes Lag och Elastiska Gränser
 
-Enligt Hookes lag är töjningen `ε` proportionell mot den applicerade spänningen `σ` så länge materialet inte överskrider sin elastiska gräns. **Elasticitetsmodulen** `E` för materialet beskriver materialets styvhet.
+Enligt Hookes lag är **töjningen** `ε` proportionell mot den applicerade spänningen `σ` så länge materialet inte överskrider sin elastiska gräns. **Elasticitetsmodulen** `E` för materialet beskriver materialets styvhet.
+
+{title: "Hookes lag"}
+```latexmath
+\sigma = E \cdot \epsilon
+```
+
+där:
+- \(`σ`\) är spänningen i N/mm²
+- \(`E`\) är elasticitetsmodulen eller Youngs modulus i N/mm²
+- \(`ε`\) är töjningen, enhetslös
 
 För stål är elasticitetsmodulen typiskt omkring 210 000 N/mm². Om vi använder detta värde, kan vi beräkna töjningen `ε` som orsakas av den tidigare beräknade dragspänningen.
 
@@ -101,6 +97,50 @@ Med `\sigma = 100 \, \text{N/mm}^2`$ och `E = 210 000 \, \text{N/mm}^2`$:
 ```
 
 Detta betyder att för varje meter av stången, sker en förlängning på cirka 0.000476 meter (eller 0.476 millimeter).
+
+Här kombinerar vi beräkning av dragspänning och töjning i ett Python program.
+
+```python
+def berakna_dragspanning(kraft, area_mm2):
+    """
+    Beräknar dragspänning.
+
+    Parameters:
+    kraft (float): Kraft i Newton.
+    area_mm2 (float): Tvärsnittsarea i kvadratmillimeter.
+
+    Returns:
+    float: Dragspänning i N/mm².
+    """
+    return kraft / area_mm2
+
+def berakna_tojning_mm_per_meter(dragspanning, elasticitetsmodul=210000):
+    """
+    Beräknar töjning i millimeter per meter.
+
+    Parameters:
+    dragspanning (float): Dragspänning i N/mm².
+    elasticitetsmodul (float): Elasticitetsmodulen för materialet i N/mm² (standardvärde för stål är 210000 N/mm²).
+
+    Returns:
+    float: Töjning i mm/meter.
+    """
+    # Beräkna töjning som är enhetslös
+    tojning = dragspanning / elasticitetsmodul
+    # Konvertera enhetslös töjning till mm/meter för tydligare förståelse
+    tojning_mm_per_meter = tojning * 1000  # 1 meter = 1000 millimeter
+    return tojning_mm_per_meter
+
+# Exempel på användning
+kraft = 500  # Newton
+area_mm2 = 10  # kvadratmillimeter
+
+dragspanning = berakna_dragspanning(kraft, area_mm2)
+tojning_mm_per_meter = berakna_tojning_mm_per_meter(dragspanning)
+
+print(f"Dragspänningen är {dragspanning:} N/mm²")
+print(f"Töjningen är {tojning_mm_per_meter:.3f} mm/meter")
+```
 
 ## Sammanfattning
 
