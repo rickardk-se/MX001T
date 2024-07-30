@@ -17,7 +17,7 @@ där:
 - (`F`) är den applicerade kraften parallellt med ytan i Newton (N).
 - (`A`) är den tvärsnittsarea över vilken kraften verkar, i kvadratmillimeter (mm²).
 
-![Skjuvspänning](images/skjuvning.png)
+![Skjuvspänning](skjuvning.png)
 
 ## Skjuvmodul och Skjuvdeformation
 
