@@ -17,9 +17,11 @@ där:
 - (`F`) är den applicerade kraften parallellt med ytan i Newton (N).
 - (`A`) är den tvärsnittsarea över vilken kraften verkar, i kvadratmillimeter (mm²).
 
+![Skjuvspänning](images/skjuvning.png)
+
 ## Skjuvmodul och Skjuvdeformation
 
-Skjuvmodulen, även känd som modulen för stelhet (\(G\)), beskriver materialets styvhet vid skjuvning. Den är en materialkonstant som relaterar skjuvspänning till skjuvdeformation (\(\gamma\)):
+Skjuvmodulen, även känd som modulen för stelhet (`G`), beskriver materialets styvhet vid skjuvning. Den är en materialkonstant som relaterar skjuvspänning till skjuvdeformation (`\gamma`$):
 
 ```latexmath
 \tau = G \cdot \gamma
@@ -52,7 +54,7 @@ Detta innebär att skjuvspänningen i plattan är 1 N/mm².
 
 ## Exempel på Beräkning av Skjuvdeformation
 
-Låt oss säga att skjuvmodulen (\(G\)) för materialet i den tidigare nämnda plattan är 25,000 N/mm². Vi kan beräkna skjuvdeformationen (\(\gamma\)) med hjälp av formeln:
+Låt oss säga att skjuvmodulen (`G`) för materialet i den tidigare nämnda plattan är 25,000 N/mm². Vi kan beräkna skjuvdeformationen (`\gamma`$) med hjälp av formeln:
 
 ```latexmath
 \gamma = \frac{\tau}{G}
