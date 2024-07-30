@@ -54,6 +54,36 @@ Således:
 
 Detta innebär att dragspänningen i stången är 100 N/mm².
 
+Om man vill göra beräkningen i Python så följer här exempel på det.
+
+ {caption: "Beräkna dragspänning i Python"}
+```python
+def berakna_dragspanning(kraft, area_mm2):
+    """
+    Beräknar dragspänning.
+
+    Parameters:
+    kraft (float): Kraft i Newton.
+    area_mm2 (float): Tvärsnittsarea i kvadratmillimeter.
+
+    Returns:
+    float: Dragspänning i N/mm².
+    """
+    return kraft / area_mm2
+
+
+kraft = 1000  # Newton
+area_mm2 = 10  # kvadratmillimeter
+
+dragspanning = berakna_dragspanning(kraft, area_mm2)
+print(f"Dragspänningen är {dragspanning} N/mm²")
+```
+
+När man kör detta program så får man följande resultat.
+```bash
+Dragspänningen är 100.0 N/mm²
+```
+
 ## Hookes Lag och Elastiska Gränser
 
 Enligt Hookes lag är töjningen `ε` proportionell mot den applicerade spänningen `σ` så länge materialet inte överskrider sin elastiska gräns. **Elasticitetsmodulen** `E` för materialet beskriver materialets styvhet.
