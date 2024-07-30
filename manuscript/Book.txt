@@ -1,2 +1,3 @@
 00-introduktion.md
 01-dragning.md
+02-skjuvning.md

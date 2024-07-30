@@ -65,7 +65,7 @@ dragspanning = berakna_dragspanning(kraft, area_mm2)
 print(f"Dragspänningen är {dragspanning} N/mm²")
 ```
 
-När man kör detta program så får man följande resultat.
+När vi kör denna kod så får vi följande resultat.
 ```bash
 Dragspänningen är 100.0 N/mm²
 ```
@@ -100,6 +100,7 @@ Detta betyder att för varje meter av stången, sker en förlängning på cirka 
 
 Här kombinerar vi beräkning av dragspänning och töjning i ett Python program.
 
+ {caption: "Beräkna töjning i Python"}
 ```python
 def berakna_dragspanning(kraft, area_mm2):
     """
@@ -132,7 +133,7 @@ def berakna_tojning_mm_per_meter(dragspanning, elasticitetsmodul=210000):
     return tojning_mm_per_meter
 
 # Exempel på användning
-kraft = 500  # Newton
+kraft = 1000  # Newton
 area_mm2 = 10  # kvadratmillimeter
 
 dragspanning = berakna_dragspanning(kraft, area_mm2)
@@ -140,6 +141,12 @@ tojning_mm_per_meter = berakna_tojning_mm_per_meter(dragspanning)
 
 print(f"Dragspänningen är {dragspanning:} N/mm²")
 print(f"Töjningen är {tojning_mm_per_meter:.3f} mm/meter")
+```
+
+När vi kör denna kod så får vi följande resultat.
+```
+Dragspänningen är 100.0 N/mm²
+Töjningen är 0.476 mm/meter
 ```
 
 ## Sammanfattning
